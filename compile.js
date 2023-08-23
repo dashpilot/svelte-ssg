@@ -77,3 +77,7 @@ const files = fs.readdirSync('./src/pages');
 files.forEach((file)=>{
   compilePages(file);
 })
+
+// this is only needed for Edge functions
+const edge_layout = fs.readFileSync(`./src/layout.html`, 'utf8');
+fs.writeFileSync(`./public/_layout.html`, edge_layout);
