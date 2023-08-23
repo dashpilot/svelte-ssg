@@ -4,10 +4,7 @@ export const config = {
 
 export default async (request) => {
 
-  console.log(request.url);
-
-
-  const { searchParams } = new URL(req.url);
+  const { searchParams } = new URL(request.url);
   var page = searchParams.get("page");
   page.replace('.html', '');
 
