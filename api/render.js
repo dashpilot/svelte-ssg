@@ -6,14 +6,8 @@ export const config = {
 };
 
 export default async (request) => {
-    const data = {
-        "posts": [
-          {
-            "page": "index",
-            "title": "Welcome to my site",
-            "body": "Lorem ipsum dolor sit amet"
-          }]
-        }
+  const response = await fetch("/data.json");
+	const data = await response.json();
   const { default: Component } = await import(`./../precompiled/pages/index.js`);
   const result = Component.render({ data: data });
   return new Response(result.html, {

@@ -38,7 +38,7 @@ async function compilePages(filename){
 
   const source = fs.readFileSync(`./src/pages/${filename}`, 'utf8');
   const layout = fs.readFileSync(`./src/layout.html`, 'utf8');
-  var data = fs.readFileSync(`./src/data.json`, 'utf8');
+  var data = fs.readFileSync(`./public/data.json`, 'utf8');
   data = JSON.parse(data);
   // console.log(data)
 
