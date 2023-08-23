@@ -40,6 +40,7 @@ async function compilePages(filename){
   const layout = fs.readFileSync(`./src/layout.html`, 'utf8');
   var data = fs.readFileSync(`./public/data.json`, 'utf8');
   data = JSON.parse(data);
+  data.page = name;
   // console.log(data)
 
   // Compile the component to JavaScript code

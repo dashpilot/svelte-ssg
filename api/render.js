@@ -15,7 +15,8 @@ export default async (request) => {
   }
 
   const resp = await fetch("https://svelte-ssg.vercel.app/data.json");
-	const data = await resp.json();
+	var data = await resp.json();
+  data.page = page;
 
   const resp2 = await fetch("https://svelte-ssg.vercel.app/_layout.html");
 	const layout = await resp2.text();

@@ -12,6 +12,9 @@
 <Nav />
 
 <div class="container mt-5">
+
+<h3>{data.page}</h3>
+
     {#each data.posts as item}
     {#if item.page=='index'}
     <section class="p-3">
