@@ -6,8 +6,8 @@ export const config = {
 };
 
 export default async (request) => {
-  const response = await fetch("/data.json");
-	const data = await response.json();
+  const resp = await fetch("https://svelte-ssg.vercel.app/data.json");
+	const data = await resp.json();
   const { default: Component } = await import(`./../precompiled/pages/index.js`);
   const result = Component.render({ data: data });
   return new Response(result.html, {
