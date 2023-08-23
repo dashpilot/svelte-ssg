@@ -2,7 +2,7 @@
 import { create_ssr_component } from "svelte/internal";
 
 const Component = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-	return `<nav><a href="/">Home</a> <a href="/about.html">About</a></nav>`;
+	return `<nav><a href="./">Home</a> <a href="./about.html">About</a></nav>`;
 });
 
 export default Component;

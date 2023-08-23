@@ -3,6 +3,9 @@ export const config = {
 };
 
 export default async (request) => {
+
+  console.log(request.query);
+
   const resp = await fetch("https://svelte-ssg.vercel.app/data.json");
 	const data = await resp.json();
 
