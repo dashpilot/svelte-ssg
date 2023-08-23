@@ -4,7 +4,7 @@ export const config = {
 
 export default async (request) => {
 
-  console.log(request.url.searchParams.get("page"));
+  console.log(request.url);
 
   const resp = await fetch("https://svelte-ssg.vercel.app/data.json");
 	const data = await resp.json();
