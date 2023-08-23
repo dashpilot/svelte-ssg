@@ -1,0 +1,19 @@
+{
+  "posts": [
+    {
+      "page": "index",
+      "title": "Welcome to my site",
+      "body": "Lorem ipsum dolor sit amet"
+    },
+    {
+      "page": "about",
+      "title": "About",
+      "body": "This is the about page"
+    },
+    {
+      "page": "about",
+      "title": "Second post",
+      "body": "This is a second post on the about page"
+    }
+  ]
+}
