@@ -1,5 +1,5 @@
 
-import template from "./../modules/index.mjs";
+import template from "./../precompiled/index.js";
 
 export const config = {
   runtime: "edge",
