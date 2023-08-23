@@ -1,5 +1,5 @@
 
-import template from "./../precompiled/index.js";
+// import template from "./../precompiled/index.js";
 
 export const config = {
   runtime: "edge",
@@ -14,7 +14,7 @@ export default async (request) => {
             "body": "Lorem ipsum dolor sit amet"
           }]
         }
-  const { default: Component } = await import(`./precompiled/pages/index.js`);
+  const { default: Component } = await import(`./../precompiled/pages/index.js`);
   const result = Component.render({ data: data });
   return new Response(result, {
     headers: { "content-type": "text/html" },
