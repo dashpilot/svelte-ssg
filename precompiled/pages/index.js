@@ -10,8 +10,8 @@ import { onMount } from "svelte";
 import Nav from "../lib/Nav.js";
 
 const css = {
-	code: "h3.js-q98c38{padding-left:20px}",
-	map: "{\"version\":3,\"sources\":[\"\"],\"sourcesContent\":[\"<script>\\n    import {onMount} from \\\"svelte\\\";\\n\\n    import Nav from \\\"../lib/Nav.js\\\"\\n    export let data;\\n\\n    onMount(async () => {\\n        console.log('hello')\\n    });\\n</script>\\n\\n<Nav />\\n\\n\\n<div class=\\\"container mt-5\\\">\\n\\n<h3>Page: {data.page}</h3>\\n\\n    {#each data.posts as item}\\n    {#if item.page=='index'}\\n    <section class=\\\"p-3\\\">\\n    <h1>{item.title}</h1>\\n    {@html item.body}\\n    </section>\\n    {/if}\\n    {/each}\\n</div>\\n\\n<style>\\nh3{\\n    padding-left: 20px;\\n}\\n</style>\\n\"],\"names\":[],\"mappings\":\"AA6BA,gBAAE,CACE,YAAY,CAAE,IAClB\"}"
+	code: "h5.js-q98b36{padding-left:20px}",
+	map: "{\"version\":3,\"sources\":[\"\"],\"sourcesContent\":[\"<script>\\n    import {onMount} from \\\"svelte\\\";\\n\\n    import Nav from \\\"../lib/Nav.js\\\"\\n    export let data;\\n\\n    onMount(async () => {\\n        console.log('hello')\\n    });\\n</script>\\n\\n<Nav />\\n\\n\\n<div class=\\\"container mt-5\\\">\\n\\n<h5>Page: {data.page}</h5>\\n\\n    {#each data.posts as item}\\n    {#if item.page=='index'}\\n    <section class=\\\"p-3\\\">\\n    <h1>{item.title}</h1>\\n    {@html item.body}\\n    </section>\\n    {/if}\\n    {/each}\\n</div>\\n\\n<style>\\nh5{\\n    padding-left: 20px;\\n}\\n</style>\\n\"],\"names\":[],\"mappings\":\"AA6BA,gBAAE,CACE,YAAY,CAAE,IAClB\"}"
 };
 
 const Component = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -24,7 +24,7 @@ const Component = create_ssr_component(($$result, $$props, $$bindings, slots) =>
 	if ($$props.data === void 0 && $$bindings.data && data !== void 0) $$bindings.data(data);
 	$$result.css.add(css);
 
-	return `${validate_component(Nav, "Nav").$$render($$result, {}, {}, {})} <div class="container mt-5"><h3 class="svelte-q98c38">Page: ${escape(data.page)}</h3> ${each(data.posts, item => {
+	return `${validate_component(Nav, "Nav").$$render($$result, {}, {}, {})} <div class="container mt-5"><h5 class="svelte-q98b36">Page: ${escape(data.page)}</h5> ${each(data.posts, item => {
 		return `${item.page == 'index'
 		? `<section class="p-3"><h1>${escape(item.title)}</h1> ${item.body} </section>`
 		: ``}`;

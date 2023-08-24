@@ -9,8 +9,8 @@ import {
 import Nav from "../lib/Nav.js";
 
 const css = {
-	code: "h3.js-10d20qc{padding-left:20px}",
-	map: "{\"version\":3,\"sources\":[\"\"],\"sourcesContent\":[\"<script>\\n    import Nav from \\\"../lib/Nav.js\\\"\\n    export let data;\\n</script>\\n\\n<Nav />\\n\\n<div class=\\\"container mt-5\\\">\\n\\n    <h3>Page: {data.page}</h3>\\n\\n    {#each data.posts as item}\\n    {#if item.page=='about'}\\n    <section class=\\\"p-3\\\">\\n    <h1>{item.title}</h1>\\n    {@html item.body}\\n    </section>\\n    {/if}\\n    {/each}\\n</div>\\n\\n<style>\\n  h3{\\n    padding-left: 20px;\\n  }\\n</style>  \"],\"names\":[],\"mappings\":\"AAsBE,iBAAE,CACA,YAAY,CAAE,IAChB\"}"
+	code: "h5.js-10cb7aa{padding-left:20px}",
+	map: "{\"version\":3,\"sources\":[\"\"],\"sourcesContent\":[\"<script>\\n    import Nav from \\\"../lib/Nav.js\\\"\\n    export let data;\\n</script>\\n\\n<Nav />\\n\\n<div class=\\\"container mt-5\\\">\\n\\n    <h5>Page: {data.page}</h5>\\n\\n    {#each data.posts as item}\\n    {#if item.page=='about'}\\n    <section class=\\\"p-3\\\">\\n    <h1>{item.title}</h1>\\n    {@html item.body}\\n    </section>\\n    {/if}\\n    {/each}\\n</div>\\n\\n<style>\\n  h5{\\n    padding-left: 20px;\\n  }\\n</style>  \"],\"names\":[],\"mappings\":\"AAsBE,iBAAE,CACA,YAAY,CAAE,IAChB\"}"
 };
 
 const Component = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -18,7 +18,7 @@ const Component = create_ssr_component(($$result, $$props, $$bindings, slots) =>
 	if ($$props.data === void 0 && $$bindings.data && data !== void 0) $$bindings.data(data);
 	$$result.css.add(css);
 
-	return `${validate_component(Nav, "Nav").$$render($$result, {}, {}, {})} <div class="container mt-5"><h3 class="svelte-10d20qc">Page: ${escape(data.page)}</h3> ${each(data.posts, item => {
+	return `${validate_component(Nav, "Nav").$$render($$result, {}, {}, {})} <div class="container mt-5"><h5 class="svelte-10cb7aa">Page: ${escape(data.page)}</h5> ${each(data.posts, item => {
 		return `${item.page == 'about'
 		? `<section class="p-3"><h1>${escape(item.title)}</h1> ${item.body} </section>`
 		: ``}`;

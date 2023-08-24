@@ -14,7 +14,7 @@
 
 <div class="container mt-5">
 
-<h3>Page: {data.page}</h3>
+<h5>Page: {data.page}</h5>
 
     {#each data.posts as item}
     {#if item.page=='index'}
@@ -27,7 +27,7 @@
 </div>
 
 <style>
-h3{
+h5{
     padding-left: 20px;
 }
 </style>
