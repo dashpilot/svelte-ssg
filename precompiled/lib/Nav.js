@@ -2,13 +2,13 @@
 import { create_ssr_component } from "svelte/internal";
 
 const css = {
-	code: "nav.svelte-1vmhq02.svelte-1vmhq02{background-color:#f8f9fa;padding:10px}nav.svelte-1vmhq02 a.svelte-1vmhq02{margin-right:10px}",
-	map: "{\"version\":3,\"sources\":[\"\"],\"sourcesContent\":[\"<nav>\\n    <a href=\\\"./\\\">Home</a>\\n    <a href=\\\"./about.html\\\">About</a>\\n</nav>\\n\\n\\n<style>\\n    nav {\\n        background-color: #f8f9fa;\\n        padding: 10px;\\n    }\\n\\n    nav a {\\n        margin-right: 10px;\\n    }\\n    \\n</style>\\n\\n\"],\"names\":[],\"mappings\":\"AAOI,iCAAI,CACA,gBAAgB,CAAE,OAAO,CACzB,OAAO,CAAE,IACb,CAEA,kBAAG,CAAC,gBAAE,CACF,YAAY,CAAE,IAClB\"}"
+	code: "nav.svelte-f4afpv.svelte-f4afpv{background-color:#f8f9fa;padding:10px;padding-bottom:12px;border-bottom:1px solid #DDD}nav.svelte-f4afpv a.svelte-f4afpv{margin-left:10px;text-decoration:none}",
+	map: "{\"version\":3,\"sources\":[\"\"],\"sourcesContent\":[\"<nav>\\n    <a href=\\\"./\\\">Home</a>\\n    <a href=\\\"./about.html\\\">About</a>\\n</nav>\\n\\n\\n<style>\\n    nav {\\n        background-color: #f8f9fa;\\n        padding: 10px;\\n        padding-bottom: 12px;\\n        border-bottom: 1px solid #DDD;\\n    }\\n\\n    nav a {\\n        margin-left: 10px;\\n        text-decoration: none;\\n    }\\n\\n</style>\\n\\n\"],\"names\":[],\"mappings\":\"AAOI,+BAAI,CACA,gBAAgB,CAAE,OAAO,CACzB,OAAO,CAAE,IAAI,CACb,cAAc,CAAE,IAAI,CACpB,aAAa,CAAE,GAAG,CAAC,KAAK,CAAC,IAC7B,CAEA,iBAAG,CAAC,eAAE,CACF,WAAW,CAAE,IAAI,CACjB,eAAe,CAAE,IACrB\"}"
 };
 
 const Component = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 	$$result.css.add(css);
-	return `<nav class="svelte-1vmhq02"><a href="./" class="svelte-1vmhq02">Home</a> <a href="./about.html" class="svelte-1vmhq02">About</a> </nav>`;
+	return `<nav class="svelte-f4afpv"><a href="./" class="svelte-f4afpv">Home</a> <a href="./about.html" class="svelte-f4afpv">About</a> </nav>`;
 });
 
 export default Component;

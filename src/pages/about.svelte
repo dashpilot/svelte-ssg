@@ -7,7 +7,7 @@
 
 <div class="container mt-5">
 
-    <h3>{data.page}</h3>
+    <h3>Page: {data.page}</h3>
 
     {#each data.posts as item}
     {#if item.page=='about'}
@@ -18,7 +18,6 @@
     {/if}
     {/each}
 </div>
-
 
 <style>
   h3{

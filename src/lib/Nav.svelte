@@ -8,11 +8,14 @@
     nav {
         background-color: #f8f9fa;
         padding: 10px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #DDD;
     }
 
     nav a {
-        margin-right: 10px;
+        margin-left: 10px;
+        text-decoration: none;
     }
-    
+
 </style>
 
