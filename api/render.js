@@ -6,7 +6,7 @@ export default async (request) => {
 
   const { searchParams } = new URL(request.url);
   var page = searchParams.get("page");
-  page.replace('.html', '');
+  page = page.replace('.html', '');
 
   console.log(page)
 
