@@ -21,14 +21,15 @@ export default async (request) => {
   const resp2 = await fetch("https://svelte-ssg.vercel.app/_layout.html");
 	const layout = await resp2.text();
 
+  const { default: Component } = await import('./precompiled/index.js');
 
+  const result = Component.render({ data: data });
+  let body = layout.replace('{body}', result.html);
+  return new Response(body, {
+    headers: { "content-type": "text/html" },
+  });
 
-    return import(`./../precompiled/index.js`).then(({default: Component}) => {
-      const result = Component.render({ data: data });
-      let body = layout.replace('{body}', result.html);
-      return new Response(body, {
-        headers: { "content-type": "text/html" },
-      });
+      /*
     }).catch(e => {
       let error = `<h1>Error 404</h1><p>${e}</p>`;
       let body = layout.replace('{body}', error);
@@ -36,6 +37,7 @@ export default async (request) => {
         headers: { "content-type": "text/html" },
       });
     });
+    */
 
  
 };
