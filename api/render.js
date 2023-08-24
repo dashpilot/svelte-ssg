@@ -23,7 +23,7 @@ export default async (request) => {
 
 
 
-    return import(`../precompiled/pages/index.js`).then(({default: Component}) => {
+    return import(`./../precompiled/index.js`).then(({default: Component}) => {
       const result = Component.render({ data: data });
       let body = layout.replace('{body}', result.html);
       return new Response(body, {
