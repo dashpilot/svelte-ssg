@@ -4,7 +4,7 @@
 
 <nav>
     {#each data.pages as page}
-    <a href="./{page.slug}.html">{page.title}</a>
+    <a href="./{page.slug}">{page.title}</a>
     {/each}
 </nav>
 

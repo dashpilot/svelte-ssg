@@ -2,6 +2,7 @@
     "rewrites": [
       { "source": "/api/:page", "destination": "/api/render" },
       { "source": "/api/", "destination": "/api/render?page=index" }
-    ]
-  }
+    ],
+    "cleanUrls": true
+}
   
