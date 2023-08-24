@@ -11,6 +11,7 @@
 
 <Nav />
 
+
 <div class="container mt-5">
 
 <h3>{data.page}</h3>
@@ -24,3 +25,11 @@
     {/if}
     {/each}
 </div>
+
+
+
+<style>
+h3{
+    padding-left: 20px;
+}
+</style>
