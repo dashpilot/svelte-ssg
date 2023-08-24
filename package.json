@@ -13,8 +13,7 @@
   },
   "scripts": {
     "dev": "dev-refresh src --serve public --cmd 'npm run build-dev'",
-    "build-dev": "node compile.js",
-    "build": "node compile.js"
+    "build-dev": "node compile.js"
   },
   "type": "module",
   "author": "",
