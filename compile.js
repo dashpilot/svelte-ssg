@@ -89,7 +89,6 @@ comps.forEach((comp)=>{
 
 compilePages();
 
-console.log(all_css);
 fs.writeFileSync(`./public/style.min.css`, all_css);
 
 
