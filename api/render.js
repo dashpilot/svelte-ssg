@@ -16,7 +16,7 @@ export default async (request) => {
 
   const resp = await fetch("https://svelte-ssg.vercel.app/data.json");
 	var data = await resp.json();
-  data.page = page;
+  data.page = data.pages.filter(x=>x.slug==page)[0];
 
   console.log(data)
 
