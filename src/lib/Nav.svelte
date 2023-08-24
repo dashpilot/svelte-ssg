@@ -4,7 +4,11 @@
 
 <nav>
     {#each data.pages as page}
+    {#if page.slug=='index'}
+    <a href="./">{page.title}</a>
+    {:else}
     <a href="./{page.slug}">{page.title}</a>
+    {/if}
     {/each}
 </nav>
 
