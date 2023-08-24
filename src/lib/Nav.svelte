@@ -1,6 +1,11 @@
+<script>
+    export let data;
+</script>
+
 <nav>
-    <a href="./">Home</a>
-    <a href="./about.html">About</a>
+    {#each data.pages as page}
+    <a href="./{page.slug}.html">{page.title}</a>
+    {/each}
 </nav>
 
 
@@ -16,6 +21,5 @@
         margin-left: 10px;
         text-decoration: none;
     }
-
 </style>
 

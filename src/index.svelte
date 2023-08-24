@@ -1,7 +1,8 @@
 <script>
     import {onMount} from "svelte";
 
-    import Nav from "../lib/Nav.svelte"
+    import Nav from "./lib/Nav.svelte"
+    import Post from "./lib/Post.svelte"
     export let data;
 
     onMount(async () => {
@@ -9,19 +10,15 @@
     });
 </script>
 
-<Nav />
-
+<Nav bind:data />
 
 <div class="container mt-5">
 
-<h5>Page: {data.page}</h5>
+<h5>{data.page.title}</h5>
 
     {#each data.posts as item}
-    {#if item.page=='index'}
-    <section class="p-3">
-    <h1>{item.title}</h1>
-    {@html item.body}
-    </section>
+    {#if item.page==data.page.slug}
+    <Post bind:item />
     {/if}
     {/each}
 </div>

@@ -1,4 +1,18 @@
 {
+  "pages":[
+    {
+      "title": "Home",
+      "slug": "index"
+    },
+    {
+      "title": "About",
+      "slug": "about"
+    },
+    {
+      "title": "Contact",
+      "slug": "contact"
+    }
+  ],
   "posts": [
     {
       "page": "index",
